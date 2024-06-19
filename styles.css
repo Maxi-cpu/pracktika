@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.blue-button {
+    text-transform: uppercase;
+    background-color: #7AE5FD;
+    border-radius: 5.4em;
+    padding: 1.3em 2.2em;
+    font-weight: 400;
+    line-height: 1.1em;
+    font-size: 1.12em;
+    border: 0;
+}
+
+.blue-button:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #69c8dd;
+}
+
+.white-button{
+    background-color: white;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 3.8em;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sub-title{
+    font-weight: 400;
+    font-size: 1.7em;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.text{
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 1.5rem;
+}
+
+.text-left-align {
+    text-align: left;
+}
+
+.text-light-blue{
+    color: #73A6B1;
+    text-align: center;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5em 4.43em;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    gap:1.5em
+}
+
+.menu-item{
+    list-style: none;
+}
+
+.menu-item:not(:last-child){
+    margin-left: 2em;
+}
+
+.menu-item:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.first-screen {
+    background-image: url('./assets/images/FirstScreenBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 86vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 14vh;
+    box-sizing:content-box;
+}
+
+.first-screen-container{
+    width: 40vh;
+    margin-left: 6.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875em;
+}
+
+.main-title {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 3.94em;
+    line-height: 1;
+    margin: 0;
+}
+
+.main-description{
+    font-weight: 400;
+}
+
+.description-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+}
+
+.description-title{
+    margin: 10em 4.43em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.93em;
+}
+
+.description-text-header{
+    font-weight: 400;
+    font-size: 2.87em;
+    text-transform: uppercase;
+    margin-bottom: 0.62rem;
+}
+
+.description-block{
+    background: #F1FDFF;
+    margin-bottom: 5vh;
+    padding: 2vh 3vw;
+    display: flex;
+    gap: 3.87em;
+}
+
+.flex-wrapper{
+    width: 38vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block-img{
+    border-radius: 1rem;
+    width: 40vw;
+}
+
+.our-mission-screen{
+    display: flex;
+    justify-content: center;
+    padding: 6vw;
+    margin-top: 20vh;
+    position: relative;
+}
+
+.our-mission-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5.625em 3.875em;
+    width: 100%;
+    background: #F1FDFF;
+}
+
+.our-mission-text{
+    flex: 1;
+    font-weight: 400;
+    font-size: 1.68em;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.background-img{
+    position: absolute;
+    z-index: 1;
+    bottom: 10vh;
+    right: 2vw;
+}
+
+.kids-img {
+    position: absolute;
+    z-index: 2;
+    bottom: 8vh;
+    right: 12vw;
+}
+
+.donation-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 11em 4.43em 11em 4.43em;
+}
+
+.donation-header{
+    margin-bottom: 0.93rem;
+}
+
+.donation-score-block{
+    display: flex;
+    flex-direction: column;
+    margin: 3.125em 0;
+    align-items: center;
+}
+
+.donation-sub-header{
+    font-weight: 400;
+    font-size: 1.68em;
+}
+
+.donation-score-title{
+    margin-bottom: 1.06em;
+    font-weight: 400;
+    font-size: 1.68em;
+}
+
+.donation-sum {
+    display: flex;
+    align-items: center;
+}
+
+.donation-sum span {
+    font-weight: 400;
+    font-size: 3.75em;
+    position: relative;
+    padding: 0 10px;
+}
+
+.donation-sum span:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 80%;
+    top:10%;
+    border-left: 2px solid lightblue;
+}
+
+.footer-container{
+    padding: 0 4.43em 10em 4.43em;
+    background-color: #F9FADF;
+}
+
+.contacts-container{
+    padding-top: 3.12em;
+    display: flex;
+    justify-content: space-between;
+    gap:5.81em;
+}
+
+.contacts-title-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-title{
+    font-size: 3.75em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contacts-info-container{
+    flex:1;
+}
+
+.contacts-text{
+    margin-right: 10rem;
+}
+
+.contacts-text>span{
+    font-weight: 700;
+}
+
+.contacts-text>span::before{
+    content: ' ';
+    display: block;
+}
+
+.contacts-info-logos{
+    margin-top: 3.56rem;
+}
+
+.subscribe-container{
+    margin-top: 3.125em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0.62em;
+    padding: 3.75em;
+    gap:5.81em;
+}
+
+.subscribe-form{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap:2.43em;
+}
+
+.email-icon{
+    width: 37vw;
+    margin: 2.81em 0;
+    flex:1;
+}
+
+.data-input{
+    font-weight: 400;
+    font-size: 1.25em;
+    padding: 1.31rem 2.68rem 1.31rem 2.68rem;
+    border-radius: 5.4em;
+    border: 0;
+    background-color: #F9FADF;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.subscribe-text{
+    font-weight: 400;
+    font-size: 1.68em;
+    margin-right: 2.6em;
+}
+
+.full-button{
+    width: 100%;
+}
